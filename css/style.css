@@ -1,0 +1,325 @@
+/* Fonts Start */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Newake Demo';
+    src: url('../fonts/NewakeDemo.eot');
+    src: url('../fonts/NewakeDemo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NewakeDemo.woff2') format('woff2'),
+        url('../fonts/NewakeDemo.woff') format('woff'),
+        url('../fonts/NewakeDemo.ttf') format('truetype'),
+        url('../fonts/NewakeDemo.svg#NewakeDemo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff'),
+        url('../fonts/Gotham-Book.ttf') format('truetype'),
+        url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff'),
+        url('../fonts/Gotham-Bold.ttf') format('truetype'),
+        url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fonts End */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1558px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px 30px;
+    border-bottom: 1px solid #737373;
+}
+
+.header .logo a {
+    color: #292929;
+    font-size: 36px;
+    font-family: 'Newake Demo';
+    letter-spacing: -1.8px;
+    text-transform: capitalize;
+}
+
+.intro {
+    position: relative;
+    padding: 133px 0;
+}
+
+.intro .social {
+    margin-bottom: 60px;
+}
+
+.intro .social ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .social ul li {
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 17.5px;
+    background: #fff;
+    z-index: 10;
+}
+
+.intro .social ul li a svg {
+    display: block;
+}
+
+.intro .title-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 891px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.intro .title-group h1 {
+    color: #292929;
+    font-family: 'Newake Demo';
+    letter-spacing: -7px;
+    text-transform: uppercase;
+    font-size: 260px;
+    line-height: 260px;
+    background: url("../img/img-1.jpg");
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro .title-group .decore-group .decore {
+    position: absolute;
+}
+
+.intro .title-group .decore-group .decore.portal {
+    right: -34px;
+    bottom: -55px;
+}
+
+.intro .title-group .decore-group .decore.moon {
+    top: 125px;
+    left: -262px;
+}
+
+.intro .title-group .decore-group .decore.wawes {
+    top: -116px;
+    left: -238px;
+}
+
+.intro .direction-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .hands-group .hand {
+    position: absolute;
+    pointer-events: none;
+}
+
+.intro .hands-group .hand.left {
+    left: 0;
+    top: 575px;
+}
+
+.intro .hands-group .hand.right {
+    right: 0;
+    top: -25px;
+}
+
+.faq {
+    padding: 86px 0 280px;
+}
+
+.faq .title-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq .title-group h2 {
+    color: #000;
+    font-family: 'Newake Demo';
+    font-size: 64px;
+}
+
+.faq #my-accordion .acc_section {
+    padding: 24px 40px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(30, 30, 30, 0.04);
+}
+
+.faq #my-accordion .acc_section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.faq #my-accordion .acc_section .accordion-title {
+    color: #303030;
+    font-size: 28px;
+    font-weight: 600;  
+    cursor: pointer;
+    position: relative;
+}
+
+.faq #my-accordion .acc_section .accordion-content {
+    font-size: 20px;
+    color: #000;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.faq #my-accordion .acc_section .accordion-title:after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19.9201 8.95001L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.95001' stroke='%23303030' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq #my-accordion .acc_section.acc_active .accordion-title:after {
+    transform: rotate(-90deg);
+    transition: all .3s ease;
+}
+
+.footer {
+    background-color: #292929;
+}
+
+.footer .banner {
+    background-color: #0282A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 68px 15px;
+    border-radius: 15px;
+    transform: translateY(-95px);
+    position: relative;
+}
+
+.footer .banner .banner-decore-1 {
+    position: absolute;
+    left: -35px;
+    bottom: 0;
+}
+
+.footer .banner:before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='125' viewBox='0 0 150 125' fill='none'%3E%3Cg clip-path='url(%23clip0_1107_174)'%3E%3Cpath d='M147.891 125C152.48 111.353 152.582 81.4995 116.282 71.2641C90.4865 63.9907 78.0957 51.9796 72.9623 42.5762C69.7118 36.6218 68.8102 29.4706 64.7769 24.0159C54.1337 9.62221 31.7782 -2.95042 -2 23.1576' stroke='white' stroke-width='2'/%3E%3Cpath d='M130.891 138C135.48 125.636 135.582 98.5893 99.2816 89.3162C74.9952 83.1121 62.5909 73.103 56.9387 64.8432C52.7603 58.7371 51.6026 50.7873 46.7015 45.2445C35.6678 32.766 13.6799 22.8482 -19 45.7326' stroke='white' stroke-width='2'/%3E%3Cpath d='M116.891 157C121.48 145.102 121.582 119.076 85.2816 110.153C61.6082 104.334 49.2247 95.0358 43.3797 87.2088C38.803 81.0802 37.5068 72.7956 32.239 67.2497C21.0596 55.48 -0.770549 46.4971 -33 68.2144' stroke='white' stroke-width='2'/%3E%3Cpath d='M91.8912 168C96.4797 156.102 96.5817 130.076 60.2816 121.153C36.6082 115.334 24.2247 106.036 18.3797 98.2088C13.803 92.0802 12.5068 83.7956 7.23901 78.2497C-3.94036 66.48 -25.7705 57.4971 -58 79.2144' stroke='white' stroke-width='2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1107_174'%3E%3Crect width='150' height='125' fill='white' transform='matrix(-1 0 0 -1 150 125)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer .banner:after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='125' viewBox='0 0 150 125' fill='none'%3E%3Cg clip-path='url(%23clip0_1107_180)'%3E%3Cpath d='M2.10877 0C-2.47972 13.6472 -2.58169 43.5005 33.7184 53.7359C59.5135 61.0093 71.9043 73.0204 77.0377 82.4238C80.2882 88.3782 81.1898 95.5294 85.2231 100.984C95.8663 115.378 118.222 127.95 152 101.842' stroke='white' stroke-width='2'/%3E%3Cpath d='M19.1088 -13C14.5203 -0.635856 14.4183 26.4107 50.7184 35.6838C75.0048 41.8879 87.4091 51.897 93.0613 60.1568C97.2397 66.2629 98.3974 74.2127 103.299 79.7555C114.332 92.234 136.32 102.152 169 79.2674' stroke='white' stroke-width='2'/%3E%3Cpath d='M33.1088 -32C28.5203 -20.1024 28.4183 5.92351 64.7184 14.8467C88.3918 20.666 100.775 29.9642 106.62 37.7912C111.197 43.9198 112.493 52.2044 117.761 57.7503C128.94 69.52 150.771 78.5029 183 56.7856' stroke='white' stroke-width='2'/%3E%3Cpath d='M58.1088 -43C53.5203 -31.1024 53.4183 -5.07649 89.7184 3.84669C113.392 9.666 125.775 18.9642 131.62 26.7912C136.197 32.9198 137.493 41.2044 142.761 46.7503C153.94 58.52 175.771 67.5029 208 45.7856' stroke='white' stroke-width='2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1107_180'%3E%3Crect width='150' height='125' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footer .banner p {
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1.1px;
+    z-index: 10;
+}
+
+.footer .footer-content {
+    padding-bottom: 30px;
+}
+
+.footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -24px;
+}
+
+.footer .footer-content .f-logo a {
+    color: #FFF;
+    font-size: 64px;
+    font-family: 'Newake Demo';
+    letter-spacing: -3.2px;
+    text-transform: capitalize;
+}
+
+.footer .footer-content .f-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-content .f-menu ul li {
+    margin-left: 30px;
+}
+
+.footer .footer-content .f-menu ul li a {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Gotham';
+    letter-spacing: -1px;
+}
+
+.footer .f-line {
+    border-top: 1px solid #E6E6E6;
+    padding-bottom: 47px;
+}
